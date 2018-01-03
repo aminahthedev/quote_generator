@@ -3,7 +3,7 @@ ___
 
 ![Rando quote generator](assets/randomquote.png)
 
-[Check it out here](ossified-roof.surge.sh)
+## [Check it out here](ossified-roof.surge.sh)
 
 This is a random quote generator created with JavaScript, HTML, and CSS.
 
