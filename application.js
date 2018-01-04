@@ -27,6 +27,16 @@ var quotes = [
 function newQuote() {
   var randomNumber = Math.floor(Math.random() * (quotes.length));
 
-  // document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
-  document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+  var quote = quotes[randomNumber];
+
+  document.getElementById('quoteDisplay').innerHTML = quote;
+
+  $(document).ready(function(){
+    $("#tweet").on("click", function() {
+      var $theQuote = $("div#quoteDisplay").text();
+
+      window.open("https://twitter.com/intent/tweet?text=" + $theQuote);
+    });
+    // return false;
+  });
 }

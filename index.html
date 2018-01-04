@@ -2,10 +2,16 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
   <title>Quote Gen</title>
   <link rel="stylesheet" type="text/css" href="assets/style.css">
    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <script src="https://use.fontawesome.com/afcb67202d.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous">
+  </script>
 
 </head>
 
@@ -25,7 +31,10 @@
 
   </div>
 
-  <button onClick="newQuote()">New Quote</button>
+  <button class="new-quote" onClick="newQuote()">New Quote</button>
+  <br />
+  <p>Tweet this Quote!</p>
+  <button id="tweet"><i class="fa fa-twitter fa-2x"></i></button>
 
 
   <br />
